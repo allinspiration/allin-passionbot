@@ -36,8 +36,8 @@ module.exports = (robot) ->
   #
   
   
-  enterReplies = ['Hi', 'Target Acquired', 'Firing', 'Hello friend.', 'Gotcha', 'I see you']
-  leaveReplies = ['Are you still there?', 'Target lost', 'Searching']
+  #enterReplies = ['Hi', 'Target Acquired', 'Firing', 'Hello friend.', 'Gotcha', 'I see you']
+  #leaveReplies = ['Are you still there?', 'Target lost', 'Searching']
   
   
   
