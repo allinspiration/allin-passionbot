@@ -15,18 +15,17 @@
 # Author:
 #   Table
 
-league = "http://www.sc2ranks.com/stats/league"
 
-race = "http://www.sc2ranks.com/stats/race"
-
-player = "http://www.sc2ranks.com/search/hots/global/1v1/all/all/exact/%"
 
 module.exports = (robot) ->
-	robot.respond /sc2ranks (.*)/i, (msg) ->
+	robot.respond /(sc2ranks )(.*)/i, (msg) ->
+    league = "http://www.sc2ranks.com/stats/league";
+    race = "http://www.sc2ranks.com/stats/race";
+    player = "http://www.sc2ranks.com/search/hots/global/1v1/all/all/exact/%";
 	
-	if msg.match[1] == 'league'
+	if msg.match[2] == 'league'
 			msg.send league
-		else if msg.match[1] == 'race'
+		else if msg.match[2] == 'race'
 			msg.send race
 		else 
-			msg.send player.replace "%", msg.match[1]
+			msg.send player.replace "%", msg.match[2]
