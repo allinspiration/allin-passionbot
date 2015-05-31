@@ -13,7 +13,7 @@
 # Author:
 #   Myriad Truths
 
-coinflip = ['Heads.', 'Tails.', 'The coin has landed on its side...']
+coinflip = ['Heads.', 'Tails.','Heads.', 'Tails.','Heads.', 'Tails.','Heads.', 'Tails.','Heads.', 'Tails.','Heads.', 'Tails.','Heads.', 'Tails.','Heads.', 'Tails.','Heads.', 'Tails.','Heads.', 'Tails.','Heads.', 'Tails.','Heads.', 'Tails.','Heads.', 'Tails.','Heads.', 'Tails.','Heads.', 'Tails.','Heads.', 'Tails.','Heads.', 'Tails.','Heads.', 'Tails.','Heads.', 'Tails.','Heads.', 'Tails.','Heads.', 'Tails.','Heads.', 'Tails.', 'The coin has landed on its side...']
 
 module.exports = (robot) ->
 	robot.respond /coinflip$/i, (msg) ->
