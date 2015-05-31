@@ -15,14 +15,18 @@
 # Author:
 #   Table
 
+replacedlink = "http://www.sc2ranks.com/search/hots/global/1v1/all/all/exact/{escape(msg.match[2])}";
 
 module.exports = (robot) ->
 	robot.respond /(sc2ranks )(.*)/i, (msg) ->
-	if msg.match[2] == 'league'
-			msg.send "http://www.sc2ranks.com/stats/league"
-		else if msg.match[2] == 'race'
-			msg.send "http://www.sc2ranks.com/stats/race"
-		else 
-		msg.send "http://www.sc2ranks.com/search/hots/global/1v1/all/all/exact/%".replace "%", msg.match[2]
+	msg.send replacedlink
+	
+	
+#	if msg.match[2] == 'league'
+#			msg.send "http://www.sc2ranks.com/stats/league"
+#		else if msg.match[2] == 'race'
+#			msg.send "http://www.sc2ranks.com/stats/race"
+#		else 
+		
 
 
