@@ -15,11 +15,11 @@
 # Author:
 #   Table
 
-league = ['http://www.sc2ranks.com/stats/league']
+league = ["http://www.sc2ranks.com/stats/league"]
 
-race = ['http://www.sc2ranks.com/stats/race']
+race = ["http://www.sc2ranks.com/stats/race"]
 
-player = ['http://www.sc2ranks.com/search/hots/global/1v1/all/all/exact/%']
+player = ["http://www.sc2ranks.com/search/hots/global/1v1/all/all/exact/%"]
 
 module.exports = (robot) ->
 	robot.respond /sc2ranks (.*)/i, (msg) ->
