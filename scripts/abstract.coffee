@@ -8,7 +8,7 @@
 #   None
 #
 # Commands:
-#   abstract <topic> - Prints a nice abstract of the given topic
+#   Hearsay abstract <topic> - Prints a nice abstract of the given topic
 #
 # Author:
 #   tantalor
@@ -19,7 +19,7 @@ module.exports = (robot) ->
     res.http(abstract_url)
       .header('User-Agent', 'Hubot Abstract Script')
       .get() (err, _, body) ->
-        return res.send "Sorry, the tubes are broken." if err
+        return res.send "Fatal interweb error occured. Sorry, try again later?" if err
         data = JSON.parse(body.toString("utf8"))
         return unless data
         topic = data.RelatedTopics[0] if data.RelatedTopics and data.RelatedTopics.length
@@ -42,4 +42,4 @@ module.exports = (robot) ->
           res.send data.Definition
           res.send data.DefinitionURL if data.DefinitionURL
         else
-          res.send "I don't know anything about that."
+          res.send "Sorry, I don't know anything about that."
