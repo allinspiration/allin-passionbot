@@ -15,7 +15,7 @@
 # Author:
 #   Table
 
-replacedlink = "http://www.sc2ranks.com/search/hots/global/1v1/all/all/exact/{escape(msg.match[2])}";
+replacedlink = "http://www.sc2ranks.com/search/hots/global/1v1/all/all/exact/whatever"
 
 module.exports = (robot) ->
 	robot.respond /(sc2ranks )(.*)/i, (msg) ->
@@ -27,6 +27,3 @@ module.exports = (robot) ->
 #		else if msg.match[2] == 'race'
 #			msg.send "http://www.sc2ranks.com/stats/race"
 #		else 
-		
-
-
