@@ -42,9 +42,9 @@ get started.
 
 ## Anatomy of a script
 
-When you created your hubot, the generator also created a `scripts` directory. If you peek around there, you will see some examples of scripts. For a script to be a script, it needs to:
+If you peek around the script golder, you will see some examples of scripts. For a script to be a script, it needs to:
 
-* live in a directory on the hubot script load path (`src/scripts` and `scripts` by default)
+* live in a directory on the bot script load path (`src/scripts` and `scripts` by default)
 * be a `.coffee` or `.js` file
 * export a function
 
@@ -55,11 +55,11 @@ module.exports = (robot) ->
   # your code here
 ```
 
-The `robot` parameter is an instance of your robot friend. At this point, we can start scripting up some awesomeness.
+The `robot` parameter is an instance of Passionbot. At this point, we can start scripting up some awesomeness.
 
 ## Hearing and responding
 
-Since this is a chat bot, the most common interactions are based on messages. Hubot can `hear` messages said in a room or `respond` to messages directly addressed at it. Both methods take a regular expression and a callback function as parameters. For example:
+Since this is a chat bot, the most common interactions are based on messages. Passionbot can `hear` messages said in a room or `respond` to messages directly addressed at it. Both methods take a regular expression and a callback function as parameters. For example:
 
 ```coffeescript
 module.exports = (robot) ->
@@ -132,7 +132,7 @@ If Dave says "HAL: open the pod bay doors", then `res.match[0]` is "open the pod
 
 ## Making HTTP calls
 
-Hubot can make HTTP calls on your behalf to integrate & consume third party APIs. This can be through an instance of [node-scoped-http-client](https://github.com/technoweenie/node-scoped-http-client) available at `robot.http`. The simplest case looks like:
+PassionBot can make HTTP calls on your behalf to integrate & consume third party APIs. This can be through an instance of [node-scoped-http-client](https://github.com/technoweenie/node-scoped-http-client) available at `robot.http`. The simplest case looks like:
 
 
 ```coffeescript
@@ -247,7 +247,7 @@ For those times that there isn't an API, there's always the possibility of scree
 
 ### Advanced HTTP and HTTPS settings
 
-As mentioned, hubot uses [node-scoped-http-client](https://github.com/technoweenie/node-scoped-http-client) to provide a simple interface for making HTTP and HTTP requests. Under its hood, it's using node's builtin [http](http://nodejs.org/api/http.html) and [https](http://nodejs.org/api/https.html) libraries, but providing an easy DSL for the most common kinds of interaction.
+As mentioned, Passionbot uses [node-scoped-http-client](https://github.com/technoweenie/node-scoped-http-client) to provide a simple interface for making HTTP and HTTP requests. Under its hood, it's using node's builtin [http](http://nodejs.org/api/http.html) and [https](http://nodejs.org/api/https.html) libraries, but providing an easy DSL for the most common kinds of interaction.
 
 If you need to control options on http and https more directly, you pass a second argument to `robot.http` that will be passed on to node-scoped-http-client which will be passed on to http and https:
 
@@ -272,7 +272,7 @@ res.send res.random lulz
 
 ## Topic
 
-Hubot can react to a room's topic changing, assuming that the adapter supports it.
+Passionbot can react to a room's topic.
 
 ```coffeescript
 module.exports = (robot) ->
@@ -282,7 +282,7 @@ module.exports = (robot) ->
 
 ## Entering and leaving
 
-Hubot can see users entering and leaving, assuming that the adapter supports it.
+Passionbot can see users entering and leaving a room.
 
 ```coffeescript
 enterReplies = ['Hi', 'Target Acquired', 'Firing', 'Hello friend.', 'Gotcha', 'I see you']
@@ -297,7 +297,7 @@ module.exports = (robot) ->
 
 ## Environment variables
 
-Hubot can access the environment he's running in, just like any other node program, using [`process.env`](http://nodejs.org/api/process.html#process_process_env). This can be used to configure how scripts are run, with the convention being to use the `HUBOT_` prefix.
+Passionbot can access the environment she's running in, just like any other node program, using [`process.env`](http://nodejs.org/api/process.html#process_process_env). This can be used to configure how scripts are run, with the convention being to use the `HUBOT_` prefix.
 
 ```coffeescript
 answer = process.env.HUBOT_ANSWER_TO_THE_ULTIMATE_QUESTION_OF_LIFE_THE_UNIVERSE_AND_EVERYTHING
@@ -307,7 +307,7 @@ module.exports = (robot) ->
     res.send "#{answer}, but what is the question?"
 ```
 
-Take care to make sure the script can load if it's not defined, give the Hubot developer notes on how to define it, or default to something. It's up to the script writer to decide if that should be a fatal error (e.g. hubot exits), or not (make any script that relies on it to say it needs to be configured. When possible and when it makes sense to, having a script work without any other configuration is preferred.
+Take care to make sure the script can load if it's not defined, give the Hubot developer notes on how to define it, or default to something. It's up to the script writer to decide if that should be a fatal error (e.g. passionbot exits), or not (make any script that relies on it to say it needs to be configured. When possible and when it makes sense to, having a script work without any other configuration is preferred.
 
 Here we can default to something:
 
@@ -347,7 +347,7 @@ module.exports = (robot) ->
 
 ## Dependencies
 
-Hubot uses [npm](https://github.com/isaacs/npm) to manage its dependencies. To add additional packages, add them to `dependencies` in `package.json`. For example, to add lolimadeupthispackage 1.2.3, it'd look like:
+Passionbot uses [npm](https://github.com/isaacs/npm) to manage its dependencies. To add additional packages, add them to `dependencies` in `package.json`. For example, to add lolimadeupthispackage 1.2.3, it'd look like:
 
 ```json
   "dependencies": {
@@ -361,7 +361,7 @@ If you are using scripts from hubot-scripts, take note of the `Dependencies` doc
 
 # Timeouts and Intervals
 
-Hubot can run code later using JavaScript's built-in [setTimeout](http://nodejs.org/api/timers.html#timers_settimeout_callback_delay_arg). It takes a callback method, and the amount of time to wait before calling it:
+Passionbot can run code later using JavaScript's built-in [setTimeout](http://nodejs.org/api/timers.html#timers_settimeout_callback_delay_arg). It takes a callback method, and the amount of time to wait before calling it:
 
 ```coffeescript
 module.exports = (robot) ->
@@ -371,7 +371,7 @@ module.exports = (robot) ->
     , 60 * 1000
 ```
 
-Additionally, Hubot can run code on an interval using [setInterval](http://nodejs.org/api/timers.html#timers_setinterval_callback_delay_arg). It takes a callback method, and the amount of time to wait between calls:
+Additionally, it can run code on an interval using [setInterval](http://nodejs.org/api/timers.html#timers_setinterval_callback_delay_arg). It takes a callback method, and the amount of time to wait between calls:
 
 ```coffeescript
 module.exports = (robot) ->
@@ -409,7 +409,7 @@ module.exports = (robot) ->
 
 ## HTTP Listener
 
-Hubot includes support for the [express](http://expressjs.com) web framework to serve up HTTP requests. It listens on the port specified by the `EXPRESS_PORT` or `PORT` environment variables (preferred in that order) and defaults to 8080. An instance of an express application is available at `robot.router`. It can be protected with username and password by specifying `EXPRESS_USER` and `EXPRESS_PASSWORD`. It can automatically serve static files by setting `EXPRESS_STATIC`.
+Passionbot includes support for the [express](http://expressjs.com) web framework to serve up HTTP requests. It listens on the port specified by the `EXPRESS_PORT` or `PORT` environment variables (preferred in that order) and defaults to 8080. An instance of an express application is available at `robot.router`. It can be protected with username and password by specifying `EXPRESS_USER` and `EXPRESS_PASSWORD`. It can automatically serve static files by setting `EXPRESS_STATIC`.
 
 The most common use of this is for providing HTTP end points for services with webhooks to push to, and have those show up in chat.
 
@@ -435,11 +435,11 @@ curl -X POST -H "Content-Type: application/json" -d '{"secret":"C-TECH Astronomy
 curl -d 'payload=%7B%22secret%22%3A%22C-TECH+Astronomy%22%7D' http://127.0.0.1:8080/hubot/chatsecrets/general
 ```
 
-All endpoint URLs should start with the literal string `/hubot` (regardless of what your robot's name is). This consistency makes it easier to set up webhooks (copy-pasteable URL) and guarantees that URLs are valid (not all bot names are URL-safe).
+All endpoint URLs should start with the literal string `/hubot`. This consistency makes it easier to set up webhooks (copy-pasteable URL) and guarantees that URLs are valid in case the bot name is not URL safe.
 
 ## Events
 
-Hubot can also respond to events which can be used to pass data between scripts. This is done by encapsulating node.js's [EventEmitter](http://nodejs.org/api/events.html#events_class_events_eventemitter) with `robot.emit` and `robot.on`.
+Passionbot can also respond to events which can be used to pass data between scripts. This is done by encapsulating node.js's [EventEmitter](http://nodejs.org/api/events.html#events_class_events_eventemitter) with `robot.emit` and `robot.on`.
 
 One use case for this would be to have one script for handling interactions with a service, and then emitting events as they come up. For example, we could have a script that receives data from a GitHub post-commit hook, make that emit commits as they come in, and then have another script act on those commits.
 
@@ -462,7 +462,7 @@ module.exports = (robot) ->
     #deploy code goes here
 ```
 
-If you provide an event, it's highly recommended to include a hubot user or room object in its data. This would allow for hubot to notify a user or room in chat.
+If you provide an event, it's highly recommended to include a user or room object in its data. This would allow for Passionbot to notify a user or room in chat.
 
 ## Error Handling
 
@@ -510,7 +510,7 @@ For the second example, it's worth thinking about what messages the user would s
 
 ## Documenting Scripts
 
-Hubot scripts can be documented with comments at the top of their file, for example:
+Scripts can be documented with comments at the top of their file, for example:
 
 ```coffeescript
 # Description:
@@ -533,7 +533,7 @@ Hubot scripts can be documented with comments at the top of their file, for exam
 #   <github username of the original script author>
 ```
 
-The most important and user facing of these is `Commands`. At load time, Hubot looks at the `Commands` section of each scripts, and build a list of all commands. The included `help.coffee` lets a user ask for help across all commands, or with a search. Therefore, documenting the commands make them a lot more discoverable by users.
+The most important and user facing of these is `Commands`. At load time, Passionbot looks at the `Commands` section of each scripts, and build a list of all commands. The included `help.coffee` lets a user ask for help across all commands, or with a search. Therefore, documenting the commands make them a lot more discoverable by users.
 
 When documenting commands, here are some best practices:
 
@@ -548,7 +548,7 @@ The other sections are more relevant to developers of the bot, particularly depe
 
 ## Persistence
 
-Hubot has an in-memory key-value store exposed as `robot.brain` that can be
+Passionbot has an in-memory key-value store exposed as `robot.brain` that can be
 used to store and retrieve data by scripts.
 
 ```coffeescript
@@ -628,13 +628,13 @@ from `external-scripts.json` and you don't need to worry about redis at all.
 
 ## Deployment
 
-Heroku will automatically deploy all changes to the Master branch of this repo. In case of emergency, deployment can be done manually through the Heroku dashboard or Heroku CLI.
+Allin's Heroku server will automatically deploy all changes to the Master branch of this repo. In case of emergency, deployment can be done manually through the Heroku dashboard or Heroku CLI.
 
 
 ## Restart the bot
 
-Try `heroku logs` and `heroku restart` if something goes wrong
+Try `heroku logs` and `heroku restart` from Heroku CLI if something goes wrong.
 
 ## Thanks
 
-Thanks to all who are contributing to this project.
+Thanks to all who are contributing to this project!
