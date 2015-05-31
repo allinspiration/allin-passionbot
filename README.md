@@ -6,7 +6,7 @@
 WIP
 
 
-### PassionBot is a clone of a series of scripts from the Triatomic (HipChat Hubot for Heroku) suite.
+### PassionBot is an implementation of a series of scripts from the Triatomic (HipChat Hubot for Heroku) suite.
 
 Dependencies:
 - hubot (http://hubot.github.com)
