@@ -8,7 +8,7 @@
 #   None
 #
 # Commands:
-#   Hearsay nios - I'll post links Nios.kr ranking information.
+#   @Hearsay nios - I'll post links Nios.kr ranking information.
 #
 # Author:
 #   Myriad Truths
