@@ -8,7 +8,7 @@
 #   None
 #
 # Commands:
-#   @PassionBot !! - Repeat the last command
+#   @Hearsay !! - Repeat the last command
 #
 # Author:
 #   None
