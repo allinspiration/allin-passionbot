@@ -8,23 +8,17 @@
 #   None
 #
 # Commands:
-#   hubot roll (die|one) - Roll one six-sided dice
-#   hubot roll dice - Roll two six-sided dice
 #   hubot roll <x>d<y> - roll x dice, each of which has y sides
 #
 # Author:
-#   ab9
+#   None
 
 module.exports = (robot) ->
-  robot.respond /roll (die|one)/i, (msg) ->
-    msg.reply report [rollOne(6)]
-  robot.respond /roll dice/i, (msg) ->
-    msg.reply report roll 2, 6
   robot.respond /roll (\d+)d(\d+)/i, (msg) ->
     dice = parseInt msg.match[1]
     sides = parseInt msg.match[2]
     answer = if sides < 1
-      "I don't know how to roll a zero-sided die."
+      "Roll a zero-sided die? Are you crazy?"
     else if dice > 100
       "I'm not going to roll more than 100 dice for you."
     else
