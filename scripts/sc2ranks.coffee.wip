@@ -8,7 +8,7 @@
 #   None
 #
 # Commands:
-#   Hearsay sc2ranks league - Pulls up League Data
+# Hearsay sc2ranks league - Pulls up League Data
 #	Hearsay sc2ranks race - Pulls up Race Data
 #	Hearsay sc2ranks <player> - Pulls up Player Data
 #
@@ -23,6 +23,6 @@ module.exports = (robot) ->
 		else if msg.match[2] == 'race'
 			msg.send "http://www.sc2ranks.com/stats/race"
 		else 
-			msg.send "http://www.sc2ranks.com/search/hots/global/1v1/all/all/exact/%".replace "%", msg.match[2]
+		msg.send "http://www.sc2ranks.com/search/hots/global/1v1/all/all/exact/%".replace "%", msg.match[2]
 
 
