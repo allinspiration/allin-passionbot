@@ -1,7 +1,7 @@
 <img src="https://raw.githubusercontent.com/allinspiration/allin-passionbot/master/logo.png" width="200">
 
 # PassionBot.
-## The next generation of eSports Robit Waifus, coming soon from SinCo Labs.
+## The next generation of eSports Robit Waifus,  from SinCo Labs.
 
 WIP
 
