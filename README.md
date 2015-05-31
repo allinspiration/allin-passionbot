@@ -42,7 +42,7 @@ get started.
 
 ## Anatomy of a script
 
-If you peek around the script golder, you will see some examples of scripts. For a script to be a script, it needs to:
+If you peek around the script folder, you will see some examples of scripts. For a script to be a script, it needs to:
 
 * live in a directory on the bot script load path (`src/scripts` and `scripts` by default)
 * be a `.coffee` or `.js` file
