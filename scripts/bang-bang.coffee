@@ -8,7 +8,7 @@
 #   None
 #
 # Commands:
-#   hubot !! - Repeat the last command directed at hubot
+#   @PassionBot !! - Repeat the last command
 #
 # Author:
 #   None
