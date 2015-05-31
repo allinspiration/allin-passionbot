@@ -8,10 +8,10 @@
 #   None
 #
 # Commands:
-#   @Passionbot what should I do about (.*)
-#   @Passionbot what do you think about (.*)
-#   @Passionbot how do you handle (.*)
-#   @Passionbot I need some advice
+#   Hearsay what should I do about (.*)
+#   Hearsay what do you think about (.*)
+#   Hearsay how do you handle (.*)
+#   Hearsay I need some advice
 #
 # Author:
 #   pengwynn
@@ -26,7 +26,7 @@ randomAdvice = (msg) ->
   msg.http("http://api.adviceslip.com/advice")
     .get() (err, res, body) ->
       results = JSON.parse body
-      advice = if err then "You're on your own, bud" else results.slip.advice
+      advice = if err then "You're on your own on this one." else results.slip.advice
       msg.send advice
 
 
