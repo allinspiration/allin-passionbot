@@ -8,10 +8,10 @@
 #   None
 #
 # Commands:
-#   hubot what should I do about (.*)
-#   hubot what do you think about (.*)
-#   hubot how do you handle (.*)
-#   hubot I need some advice
+#   @Passionbot what should I do about (.*)
+#   @Passionbot what do you think about (.*)
+#   @Passionbot how do you handle (.*)
+#   @Passionbot I need some advice
 #
 # Author:
 #   pengwynn
