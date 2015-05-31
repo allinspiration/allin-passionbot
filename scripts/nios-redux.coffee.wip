@@ -26,7 +26,7 @@ module.exports = (robot) ->
 #		encouragingyou = () -> msg.send encourage.replace "%", msg.match[2]
 		
 		postingrace = () -> msg.send nioslink.replace "%", msg.match[3]
-		postingallinnios = () > msg.send allinnioslink
+		postingallinnios = () -> msg.send allinnioslink
 		
 		if msg.match[3] == 'zerg'
 			postingrace()
