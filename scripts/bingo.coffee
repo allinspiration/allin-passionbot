@@ -14,7 +14,7 @@
 #   Myriad Truths
 
 module.exports = (robot) ->
-	robot.respond /nios$/i, (msg) ->
+	robot.respond /bingo$/i, (msg) ->
     msg.send "[ALLIN] Bingo Cards | https://goo.gl/wJ9Av1"
 		
 		
