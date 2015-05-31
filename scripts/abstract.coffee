@@ -8,7 +8,7 @@
 #   None
 #
 # Commands:
-#   hubot abstract <topic> - Prints a nice abstract of the given topic
+#   abstract <topic> - Prints a nice abstract of the given topic
 #
 # Author:
 #   tantalor
@@ -24,19 +24,19 @@ module.exports = (robot) ->
         return unless data
         topic = data.RelatedTopics[0] if data.RelatedTopics and data.RelatedTopics.length
         if data.AbstractText
-          # hubot abs numerology
+          # passionbot abs numerology
           # Numerology is any study of the purported mystical relationship between a count or measurement and life.
           # http://en.wikipedia.org/wiki/Numerology
           res.send data.AbstractText
           res.send data.AbstractURL if data.AbstractURL
         else if topic and not /\/c\//.test(topic.FirstURL)
-          # hubot abs astronomy
+          # passionbot abs astronomy
           # Astronomy is the scientific study of celestial objects.
           # http://duckduckgo.com/Astronomy
           res.send topic.Text
           res.send topic.FirstURL
         else if data.Definition
-          # hubot abs contumacious
+          # passionbot abs contumacious
           # contumacious definition: stubbornly disobedient.
           # http://merriam-webster.com/dictionary/contumacious
           res.send data.Definition
