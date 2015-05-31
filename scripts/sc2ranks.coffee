@@ -1,4 +1,4 @@
-# Description:
+﻿# Description:
 #   Pulls up SC2Ranks data
 #
 # Dependencies:
@@ -8,24 +8,21 @@
 #   None
 #
 # Commands:
-#   Hearsay League SC2Ranks - Pulls up League Data.
-#	Hearsay Race SC2Ranks - Pulls up Race Data.
-#	Hearsay <Player> SC2Ranks - Searches for Player Data.
+#   Hearsay sc2ranks league - Pulls up League Data
+#	Hearsay sc2ranks race - Pulls up Race Data
+#	Hearsay sc2ranks <player> - Pulls up Player Data
 #
 # Author:
 #   Table
 
 
-
 module.exports = (robot) ->
 	robot.respond /(sc2ranks )(.*)/i, (msg) ->
-    league = "http://www.sc2ranks.com/stats/league";
-    race = "http://www.sc2ranks.com/stats/race";
-    player = "http://www.sc2ranks.com/search/hots/global/1v1/all/all/exact/%";
-	
 	if msg.match[2] == 'league'
-			msg.send league
+			msg.send "http://www.sc2ranks.com/stats/league"
 		else if msg.match[2] == 'race'
-			msg.send race
+			msg.send "http://www.sc2ranks.com/stats/race"
 		else 
-			msg.send player.replace "%", msg.match[2]
+			msg.send "http://www.sc2ranks.com/search/hots/global/1v1/all/all/exact/%".replace "%", msg.match[2]
+
+
