@@ -35,12 +35,56 @@ How to set environment variables will be specific to your operating system.
 Rather than recreate the various methods and best practices in achieving this,
 it's suggested that you search for a dedicated guide focused on your OS.
 
-### Scripting
+## Adapter configuration
+
+This adapter uses the following environment variables:
+
+### HUBOT\_HIPCHAT\_JID
+
+This is your bot's Jabber ID which can be found in your [XMPP/Jabber account settings](https://www.hipchat.com/account/xmpp). It will look something like `123_456@chat.hipchat.com`
+
+### HUBOT\_HIPCHAT\_PASSWORD
+
+This is the password for your bot's HipChat account.
+
+### HUBOT\_HIPCHAT\_ROOMS
+
+Optional. This is a comma separated list of room JIDs that you want your bot to join. You can leave this blank or set it to "All" to have your bot join every room. Room JIDs look like "123_development@conf.hipchat.com" and can be found in the [XMPP/Jabber account settings](https://www.hipchat.com/account/xmpp) - just add "@conf.hipchat.com" to the end of the room's "XMPP/Jabber Name".
+
+### HUBOT\_HIPCHAT\_ROOMS\_BLACKLIST
+
+Optional. This is a comma separated list of room JIDs that should not be joined.
+
+### HUBOT\_HIPCHAT\_JOIN\_ROOMS\_ON\_INVITE
+
+Optional. Setting to `false` will prevent the HipChat adapter from auto-joining rooms when invited.
+
+### HUBOT\_HIPCHAT\_JOIN\_PUBLIC\_ROOMS
+
+Optional. Setting to `false` will prevent the HipChat adapter from auto-joining rooms that are publicly available (i.e. guest-accessible).
+
+### HUBOT\_HIPCHAT\_HOST
+
+Optional. Use to force the host to open the XMPP connection to.
+
+### HUBOT\_HIPCHAT\_XMPP\_DOMAIN
+
+Optional. Set to btf.hipchat.com if using HipChat Server Beta.
+
+### HUBOT\_LOG\_LEVEL
+
+Optional. Set to `debug` to enable detailed debug logging.
+
+### HUBOT\_HIPCHAT\_RECONNECT
+
+Optional. Seting to `false` will prevent the HipChat adapter from auto-reconnecting if it detects a server error or disconnection.
+
+## Scripting
 
 An example script is included at `scripts/example.coffee`, so check it out to
 get started.
 
-## Anatomy of a script
+### Anatomy of a script
 
 If you peek around the script folder, you will see some examples of scripts. For a script to be a script, it needs to:
 
