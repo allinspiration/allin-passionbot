@@ -1,5 +1,5 @@
 # Description:
-#   Return Hubot's external IP address (via jsonip.com)
+#  IP Check
 #
 # Dependencies:
 #   None
@@ -8,10 +8,10 @@
 #  None
 # 
 # Commands:
-#   hubot ip - Returns Hubot server's external IP address 
+#   Hearsay ip - Returns Hearsay's external IP address.
 #
 # Author:
-#   ndrake
+#   Myriad Truths
      
 module.exports = (robot) ->
   robot.respond /ip/i, (msg) ->
@@ -20,7 +20,7 @@ module.exports = (robot) ->
         json = JSON.parse(body)
         switch res.statusCode                                
           when 200
-            msg.send "External IP address: #{json.ip}"
+            msg.send "My current WAN IP address is #{json.ip}."
           else
             msg.send "There was an error getting external IP (status: #{res.statusCode})."
                 

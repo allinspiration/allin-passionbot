@@ -8,7 +8,7 @@
 #   None
 #
 # Commands:
-#   hubot roll <x>d<y> - roll x dice, each of which has y sides
+#   Hearsay roll <x>d<y> - roll x dice, each of which has y sides
 #
 # Author:
 #   None

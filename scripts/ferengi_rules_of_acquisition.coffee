@@ -8,7 +8,7 @@
 #   None
 #
 # Commands:
-#   ferengi rule - Display a random ferengi rule of acquisition.
+#   Hearsay ferengi rule - Display a random ferengi rule of acquisition.
 #
 # Author:
 #   jan0sch
@@ -264,7 +264,7 @@ rules = [
 
 module.exports = (robot) ->
 
-  words = ["ferengi rule", "money", "profit", "sale", "discount", "opportunity"]
+  words = ["ferengi", "money", "profit", "sale", "discount", "opportunity"]
   regex = new RegExp('(?:^|\\s)(' + words.join('|') + ')(?:\\s|\\.|\\?|!|$)', 'i');
 
   robot.hear regex, (msg) ->
