@@ -8,10 +8,8 @@
 #   None
 #
 # Commands:
-#   Hearsay what should I do about (.*)
-#   Hearsay what do you think about (.*)
-#   Hearsay how do you handle (.*)
-#   Hearsay I need some advice
+#   @Hearsay what do you think about <topic> - I'll give you some advice on a specific topic.
+#   @Hearsay I need some advice - I'll give you some general life advice!
 #
 # Author:
 #   pengwynn

@@ -8,7 +8,7 @@
 #   None
 #
 # Commands:
-#   @Hearsay bingo - Displays current [ALLIN] Bingo cards!
+#   @Hearsay bingo - I'll display a link to the current [ALLIN] Bingo cards!
 #
 # Author:
 #   Myriad Truths

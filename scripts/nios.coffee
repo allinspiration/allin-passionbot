@@ -8,7 +8,7 @@
 #   None
 #
 # Commands:
-#   Hearsay nios - Displays all [ALLIN] Nios.kr ranking pages.
+#   Hearsay nios - I'll post links Nios.kr ranking information.
 #
 # Author:
 #   Myriad Truths

@@ -8,7 +8,7 @@
 #   None
 #
 # Commands:
-#   hubot catfact - Reply back with random cat fact.
+#   @Hearsay catfact - I'll reply with a randomly select CatFact!
 #
 # Author:
 #   scottmeyer

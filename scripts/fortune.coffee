@@ -8,7 +8,7 @@
 #   None
 #
 # Commands:
-#   hubot fortune me - Displays a super true fortune
+#   @Hearsay fortune me - I'll post a 100% accurate fortune!
 #
 # Author:
 #   mrtazz

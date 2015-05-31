@@ -8,7 +8,7 @@
 #   None
 #
 # Commands:
-#   Hearsay abstract <topic> - Prints a nice abstract of the given topic
+#   @Hearsay abstract <topic> - I'll try to summarize the given topic.
 #
 # Author:
 #   tantalor

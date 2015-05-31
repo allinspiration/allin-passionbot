@@ -8,7 +8,7 @@
 #   None
 #
 # Commands:
-#   fibonacci me <integer> - Calculate Nth Fibonacci number
+#   @Hearsay fibonacci me <integer> - I'll calculate the given Fibonacci number. Math is fun!
 #
 # Author:
 #   ckdake

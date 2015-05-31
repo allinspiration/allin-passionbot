@@ -8,7 +8,7 @@
 #   None
 #
 # Commands:
-#   Hearsay 8ball <query> - Ask the magic eight ball a question
+#   @Hearsay 8ball <query> - Ask me for some advice on a topic.
 #
 # Author:
 #   Myriad Truths

@@ -8,7 +8,7 @@
 #   None
 #
 # Commands:
-#   hubot is <domain> up? - Checks if <domain> is up
+#   @Hearsay is <domain> up? - I'll check if a website is down for everyone or just you.
 #
 # Author:
 #   jmhobbs

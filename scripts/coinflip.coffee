@@ -8,7 +8,7 @@
 #   None
 #
 # Commands:
-#   Hearsay coinflip - RNGs a coinflip.
+#   @Hearsay coinflip - I'll simulate the necessary RNG for a coinflip and report the results.
 #
 # Author:
 #   Myriad Truths

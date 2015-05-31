@@ -8,7 +8,7 @@
 #   None
 #
 # Commands:
-#   Hearsay roll <x>d<y> - roll x dice, each of which has y sides
+#   @Hearsay roll <x>d<y> - I'll roll x amount of y-sided dice and report the results.
 #
 # Author:
 #   None

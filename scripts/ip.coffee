@@ -8,7 +8,7 @@
 #  None
 # 
 # Commands:
-#   Hearsay ip - Returns Hearsay's external IP address.
+#   @Hearsay ip - I'll post my current IP Address. (Useful for troubleshooting me I'm malfunctioning.)
 #
 # Author:
 #   Myriad Truths

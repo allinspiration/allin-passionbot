@@ -8,9 +8,7 @@
 #   None
 #
 # Commands:
-#   hubot encourage me
-#   hubot encourage name
-#   hubot encourage all
+#   @Hearsay encourage me|all|<name> - I'll post some words of encouragement!
 #   
 # Author:
 #	WoogieNoogie

@@ -8,7 +8,7 @@
 #   None
 #
 # Commands:
-#   @Hearsay !! - Repeats the last executed command.
+#   @Hearsay !! - I'll repeat the last command executed again.
 #
 # Author:
 #   None

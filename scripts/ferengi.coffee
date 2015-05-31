@@ -8,7 +8,7 @@
 #   None
 #
 # Commands:
-#   @Hearsay ferengi - Display a random ferengi rule of acquisition.
+#   @Hearsay ferengi - I'll post a random Ferengi Rule of Acquisition.
 #
 # Author:
 #   jan0sch
