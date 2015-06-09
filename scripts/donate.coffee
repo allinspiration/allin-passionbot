@@ -10,7 +10,7 @@
 # Commands:
 #   @Hearsay donate - I'll post some information on how to financially contribute to the team!
 # Author:
-#   Table
+#   MyriadTruths
 
 module.exports = (robot) ->
   robot.respond /donate$/i, (msg) ->
