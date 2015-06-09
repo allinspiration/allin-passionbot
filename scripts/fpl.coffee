@@ -14,7 +14,7 @@
 #   Table
 
 module.exports = (robot) ->
-	robot.hear /!fpl/i, (msg) ->
-    msg.send "http://www.teamliquid.net/fantasy/proleague/Standings.php?r=24&g=4062"
+  robot.respond /fpl$/i, (msg) ->
+    msg.send "ALLIN Fantasy Proleague | Current Standings: "http://www.teamliquid.net/fantasy/proleague/Standings.php?r=24&g=4062"
 		
 		
