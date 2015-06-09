@@ -15,4 +15,4 @@
 
 module.exports = (robot) ->
   robot.respond /livestream$/i, (msg) ->
-    msg.send "[ALLIN] Live Stream | Twitch: http://twitch.tv/allinspiration | Hitbox.tv: http://hitbox.tv/allinlive (Less Delay) | Beam.pro: http://beam.pro/allin (Quality Options)"
+    msg.send "[ALLIN] Live Stream | Twitch.tv: http://twitch.tv/allinspiration | Hitbox.tv: http://hitbox.tv/allinlive (Less Delay) | Beam.pro: http://beam.pro/allin (Quality Options)"
