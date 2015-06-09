@@ -15,8 +15,7 @@
 
 module.exports = (robot) ->
 	robot.respond /(introduce )(.*)/i, (msg) ->
-		introduce = msg.send "Whom do you want me to introduce?"
-
+	  
 		introducingme = () -> msg.send "Do it yourself, you lazy jerk."
 		introducingunknown = () -> msg.send "I'm afraid I don't know that person well enough yet."
 		introducehearsay = () -> msg.send "Greetings! I am Hearsay, ALLIN-Cyborg relations."
@@ -25,7 +24,7 @@ module.exports = (robot) ->
 			introducingme()
 		else if msg.match[2] == 'yourself'
 		  introducehearsay()
-		else if msg.match[2] == 'MyriadTruths'
+		else if msg.match[2] == '/@MyriadTruths'
 			msg.send "MyriadTruths, is the CEO of SinCo Industries, the longest serving member of the [ALLIN] Team Management Group, and most importantly, my creator."
 		else
 			introducingunknown()
