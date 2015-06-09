@@ -1,7 +1,6 @@
 [
   "hubot-help",
   "hubot-heroku-keepalive",
-  "hubot-google-images",
   "hubot-maps",
   "hubot-redis-brain"
 ]
