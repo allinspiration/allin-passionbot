@@ -11,7 +11,7 @@
 #   @Hearsay website - I'll post the URL of the team website.
 #
 # Author:
-#   Table
+#   MyriadTruths
 
 module.exports = (robot) ->
   robot.respond /website$/i, (msg) ->
