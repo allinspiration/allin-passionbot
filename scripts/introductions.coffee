@@ -24,7 +24,9 @@ module.exports = (robot) ->
 			introducingme()
 		else if msg.match[2] == 'yourself'
 		  introducehearsay()
-		else if msg.match[2] == '/@MyriadTruths'
-			msg.send "MyriadTruths, is the CEO of SinCo Industries, the longest serving member of the [ALLIN] Team Management Group, and most importantly, my creator."
+		else if msg.match[2] == 'MyriadTruths'
+			msg.send "@MyriadTruths is the CEO of SinCo Industries, the longest serving member of the [ALLIN] Team Management Group, and most importantly, my creator."
+		else if msg.match[2] == 'Aquila'
+			msg.send "@Aquila is the worst at video games."
 		else
 			introducingunknown()
