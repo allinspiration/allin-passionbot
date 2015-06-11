@@ -24,6 +24,8 @@ module.exports = (robot) ->
 			introducingme()
 		else if msg.match[2] == 'yourself'
 		  introducehearsay()
+		else if msg.match[2] == 'Hearsay'
+		  introducehearsay()
 		else if msg.match[2] == 'Tang'
 			msg.send "@Tang is the founder and owner of Team All-Inspiration. He is our lord and savior. Hail Tang! (salute)"
 		else if msg.match[2] == 'MyriadTruths'
