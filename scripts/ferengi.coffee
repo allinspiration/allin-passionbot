@@ -264,7 +264,7 @@ rules = [
 
 module.exports = (robot) ->
 
-  words = ["ferengi", "money", "profit", "sale", "discount", "opportunity"]
+  words = ["ferengi"]
   regex = new RegExp('(?:^|\\s)(' + words.join('|') + ')(?:\\s|\\.|\\?|!|$)', 'i');
 
   robot.hear regex, (msg) ->
