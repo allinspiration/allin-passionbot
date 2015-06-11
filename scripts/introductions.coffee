@@ -36,5 +36,7 @@ module.exports = (robot) ->
 			msg.send "I don't understand much that @PSosa says, to be honest. (shrug)"
 		else if msg.match[2] == 'Jester'
 			msg.send "I'm pretty sure she's one of those fake gamer girls... (gamergate)"
+		else if msg.match[2] == 'Shalashaka'
+			msg.send "@Shalashaka is the team Recruitment Manager, so he's basically responsible for all of you being here. As you can see, he's not very good at his job."
 		else
 			introducingunknown()
