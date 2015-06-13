@@ -26,6 +26,8 @@ module.exports = (robot) ->
 		  introducehearsay()
 		else if msg.match[2] == 'Hearsay'
 		  introducehearsay()
+		else if msg.match[2] == 'managers'
+		  msg.send "Here's a quick cheatsheet. Ask me about someone specific if you want to know more. http://i.imgur.com/znouHpl.jpg"
 		else if msg.match[2] == 'Tang'
 			msg.send "@Tang is the founder and owner of Team All-Inspiration. He is our lord and savior. Hail Tang! (salute)"
 		else if msg.match[2] == 'MyriadTruths'
