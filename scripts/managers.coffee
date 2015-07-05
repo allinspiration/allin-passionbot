@@ -15,5 +15,5 @@
 
 module.exports = (robot) ->
   robot.respond /managers$/i, (msg) ->
-    msg.send "[ALLIN] Management Team | Tang, MyriadTruths, Stark, Name, gdoggcasey, PSosa, Aquila, Jester, Shalashaka"
+    msg.send "[ALLIN] Management Team | Tang, Harlock, Stark, Name, gdoggcasey, PSosa, Aquila, Jester, Shalashaka"
 	
