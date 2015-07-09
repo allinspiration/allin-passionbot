@@ -15,7 +15,7 @@
 
 module.exports = (robot) ->
   robot.respond /programs$/i, (msg) ->
-    msg.send "[ALLIN] Programs
-              [ONGOING] 2015 Season 3 Ladder Awards | Info:
-              [COMING SOON] ALLIN 2015-2016 Fantasy Proleague | TBD"
+    msg.send "[ALLIN] Programs"
+    msg.send "[ONGOING] 2015 Season 3 Ladder Awards | Info: TBD"
+    msg.send "[COMING SOON] ALLIN 2015-2016 Fantasy Proleague | TBD"
 	
