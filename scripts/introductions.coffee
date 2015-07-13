@@ -11,7 +11,7 @@
 #   @Hearsay introduce (me|yourself|<name>) - (*BETA*) I'll introduce myself and other users to new recruits!
 #   
 # Author:
-#	WoogieNoogie
+#	Harlock
 
 module.exports = (robot) ->
 	robot.respond /(introduce )(.*)/i, (msg) ->
