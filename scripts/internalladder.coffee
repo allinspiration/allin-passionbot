@@ -15,4 +15,4 @@
 
 module.exports = (robot) ->
   robot.respond /ladder$/i, (msg) ->
-    msg.send "[ALLIN] Internal StarCraft 2 Ladder | http://ladder.all-inspiration.com | Send a pm to Stark or MyriadTruths to get a login!"
+    msg.send "[ALLIN] Internal StarCraft 2 Ladder | http://ladder.all-inspiration.com | Send a PM to @Stark or @Harlock to get an account!"
