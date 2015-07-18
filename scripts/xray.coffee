@@ -8,7 +8,7 @@
 #   None
 #
 # Commands:
-#   @Hearsay (penalze|vagalize|analyze|tittyze) <name> - (*BETA*) I'll introduce myself and other users to new recruits!
+#   @Hearsay (penalyze|vagalize|analyze|titalyze) <name> - (*BETA*) This is probably an HR violation.
 #   
 # Author:
 #	Harlock
@@ -18,8 +18,8 @@ module.exports = (robot) ->
 	  
 		analyze = () -> msg.send "http://en.inkei.net/anus/#{escape(msg.match[2])}"
 		vagalyze = () -> msg.send "http://en.inkei.net/vagina/#{escape(msg.match[2])}"
-		penalyze = () -> msg.send "http://en.inkei.net/tits/#{escape(msg.match[2])}"
-		vagalyze = () -> msg.send "http://en.inkei.net/#{escape(msg.match[2])}"
+		titalyze = () -> msg.send "http://en.inkei.net/tits/#{escape(msg.match[2])}"
+		penalyze = () -> msg.send "http://en.inkei.net/#{escape(msg.match[2])}"
 		
 		
 		if msg.match[1] == 'analyze'
