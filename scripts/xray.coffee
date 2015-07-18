@@ -16,9 +16,6 @@
 module.exports = (robot) ->
 	robot.respond /(.*) (.*)/i, (msg) ->
 	  
-	  analysistype = msg.match[1]
-	  user = msg.match[2]
-	  
 		analyze = () -> msg.send "http://en.inkei.net/anus/#{escape(msg.match[2])}"
 		vagalyze = () -> msg.send "http://en.inkei.net/vagina/#{escape(msg.match[2])}"
 		titalyze = () -> msg.send "http://en.inkei.net/tits/#{escape(msg.match[2])}"
