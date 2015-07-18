@@ -30,5 +30,4 @@ module.exports = (robot) ->
 		  vagalyze()
 		else if msg.match[1] == 'titalyze'
 		  titalyze()
-		else
-		  msg.send "Sorry, I didn't understand that command."
+		end if
