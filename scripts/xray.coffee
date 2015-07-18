@@ -16,10 +16,10 @@
 module.exports = (robot) ->
 	robot.respond /(.*) (.*)/i, (msg) ->
 	  
-		analyze = () -> msg.send "Analysis complete(:) http://en.inkei.net/anus/#{escape(msg.match[2])}"
-		vagalyze = () -> msg.send "Analysis complete(:) http://en.inkei.net/vagina/#{escape(msg.match[2])}"
-		titalyze = () -> msg.send "Analysis complete(:) http://en.inkei.net/tits/#{escape(msg.match[2])}"
-		penalyze = () -> msg.send "Analysis complete(:) http://en.inkei.net/#{escape(msg.match[2])}"
+		analyze = () -> msg.send "Scan complete. HR violation recorded. | http://en.inkei.net/anus/#{escape(msg.match[2])}"
+		vagalyze = () -> msg.send "Scan complete. HR violation recorded. | http://en.inkei.net/vagina/#{escape(msg.match[2])}"
+		titalyze = () -> msg.send "Scan complete. HR violation recorded. | http://en.inkei.net/tits/#{escape(msg.match[2])}"
+		penalyze = () -> msg.send "Scan complete. HR violation recorded. | http://en.inkei.net/#{escape(msg.match[2])}"
 		
 	
 		if msg.match[1] == 'analyze'
