@@ -22,13 +22,13 @@ module.exports = (robot) ->
 		penalyze = () -> msg.send "http://en.inkei.net/#{escape(msg.match[2])}"
 		
 		
-		if msg.match[1] == 'analyze'
+		if msg.match[1] == 'analyze '
 		  analyze()
-		else if msg.match[1] == 'penalyze'
+		else if msg.match[1] == 'penalyze '
 			penalyze()
-		else if msg.match[1] == 'vagalyze'
+		else if msg.match[1] == 'vagalyze '
 		  vagalyze()
-		else if msg.match[1] == 'titalyze'
+		else if msg.match[1] == 'titalyze '
 		  titalyze()
 		else
 		  msg.send "Sorry, I didn't understand that command."
