@@ -15,5 +15,5 @@
 
 module.exports = (robot) ->
   robot.respond /fpl$/i, (msg) ->
-    msg.send "[ALLIN] Fantasy Proleague | Currently in the off-season. Check back soon!"
+    msg.send "[ALLIN] Fantasy Proleague | Standings: http://goo.gl/hhlPnj Info:  http://goo.gl/5MlT6R | Join the All-Inspiration group! Password: hailtang"
 	
