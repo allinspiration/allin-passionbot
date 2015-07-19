@@ -59,4 +59,3 @@ module.exports = (robot) ->
 		 zodiaclist()
 		else
 		 confused()
-		end if
