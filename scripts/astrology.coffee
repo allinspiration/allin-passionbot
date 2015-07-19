@@ -15,5 +15,5 @@
 
 module.exports = (robot) ->
 	robot.respond /(horoscope )(.*)/i, (msg) ->
-	  msg.send "Daily Horoscope for #(msg.match[2])} | http://www.astrology.com/horoscope/daily/#(msg.match[2])}.html"
+	  msg.send "Daily Horoscope for #{escape(msg.match[2])} | http://www.astrology.com/horoscope/daily/#{escape(msg.match[2])}.html"
 
