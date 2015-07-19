@@ -28,7 +28,7 @@ module.exports = (robot) ->
 		capricorn = () -> msg.send "Daily Horoscope for Capricorn (12/22-1/19) | http://www.astrology.com/horoscope/daily/(msg.match[2])}.html"
 		aquarius = () -> msg.send "Daily Horoscope for Aquarius (1/20-2/18) | http://www.astrology.com/horoscope/daily/(msg.match[2])}.html"
 		pisces = () -> msg.send "Daily Horoscope for Pisces (2/19-3/20) | http://www.astrology.com/horoscope/daily/(msg.match[2])}.html"
-		zodiaclist = () -> msg.send "http://i.imgur.com/iYSbBnA.jpg"
+#		zodiaclist = () -> msg.send "http://i.imgur.com/iYSbBnA.jpg"
 		confused = () -> msg.send "Sorry, I didn't understand that command."
 	
 		if msg.match[2] == 'aries'
@@ -55,7 +55,7 @@ module.exports = (robot) ->
 		 aquarius()
 		else if msg.match[2] == 'pisces'
 		 pisces()
-		else if msg.match[2] == 'list'
-		 zodiaclist()
+#		else if msg.match[2] == 'list'
+#		 zodiaclist()
 		else
 		 confused()
