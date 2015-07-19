@@ -14,7 +14,7 @@
 #	Harlock
 
 module.exports = (robot) ->
-	robot.respond /(horoscope ) (.*)/i, (msg) ->
+	robot.respond /(horoscope )(.*)/i, (msg) ->
 	  
 		aries = () -> msg.send "Daily Horoscope for Aries (3/21-4/19) | http://www.astrology.com/horoscope/daily/(msg.match[2])}.html"
 		taurus = () -> msg.send "Daily Horoscope for Taurus (4/20-5/20) | http://www.astrology.com/horoscope/daily/(msg.match[2])}.html"
@@ -30,8 +30,6 @@ module.exports = (robot) ->
 		pisces = () -> msg.send "Daily Horoscope for Pisces (2/19-3/20) | http://www.astrology.com/horoscope/daily/(msg.match[2])}.html"
 		zodiaclist = () -> msg.send "http://i.imgur.com/iYSbBnA.jpg"
 		confused = () -> msg.send "Sorry, I didn't understand that command."
-		
-	
 	
 		if msg.match[2] == 'aries'
 		 aries()
