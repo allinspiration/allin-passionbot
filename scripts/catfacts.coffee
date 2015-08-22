@@ -8,7 +8,7 @@
 #   None
 #
 # Commands:
-#   @Hearsay catfact - I'll reply with a randomly select CatFact!
+#   @Hearsay catfact - I'll reply with a randomly selected CatFact!
 #
 # Author:
 #   scottmeyer

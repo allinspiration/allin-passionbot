@@ -8,13 +8,12 @@
 #   None
 #
 # Commands:
-#   !fpl - Opens link to Allin FPL Group
+#   @Hearsay fpl - I'll post a link to the most recent Fantasy Proleague group standings.
 #
 # Author:
 #   Table
 
 module.exports = (robot) ->
-	robot.hear /!fpl/i, (msg) ->
-    msg.send "http://www.teamliquid.net/fantasy/proleague/Standings.php?r=24&g=4062"
-		
-		
+  robot.respond /fpl$/i, (msg) ->
+    msg.send "[ALLIN] Fantasy Proleague | Standings: http://goo.gl/hhlPnj Info:  http://goo.gl/5MlT6R | Join the All-Inspiration group! Password: hailtang"
+	

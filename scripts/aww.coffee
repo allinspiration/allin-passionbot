@@ -1,5 +1,5 @@
 # Description:
-#   Hubot delivers a pic from Reddit's /r/aww frontpage
+#  Hearsay delivers a pic from Reddit's /r/aww frontpage
 #
 # Dependencies:
 #   None
@@ -8,7 +8,7 @@
 #   None
 #
 # Commands:
-#   @Hearsay aww - Display the picture from /r/aww
+#   @Hearsay aww - I'll find a cute picture for you! Please, let's work together to make the world a cuter place!
 #
 # Author:
 #   eliperkins

@@ -8,7 +8,7 @@
 #   None
 #
 # Commands:
-#   @Hearsay encourage me|all|<name> - I'll post some words of encouragement!
+#   @Hearsay encourage (me|all|<name>) - I'll post some words of encouragement!
 #   
 # Author:
 #	WoogieNoogie

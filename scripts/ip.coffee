@@ -8,10 +8,10 @@
 #  None
 # 
 # Commands:
-#   @Hearsay ip - I'll post my current IP Address. (Useful for troubleshooting me I'm malfunctioning.)
+#   @Hearsay ip - I'll post my current IP Address. (Useful for troubleshooting me if I'm malfunctioning...or if you need to stress test a high load on non-critical infastructure. *ahem*)
 #
 # Author:
-#   Myriad Truths
+#   MyriadTruths
      
 module.exports = (robot) ->
   robot.respond /ip/i, (msg) ->
