@@ -15,5 +15,5 @@
 
 module.exports = (robot) ->
   robot.respond /streamlist$/i, (msg) ->
-    msg.send "[ALLIN] Featured Streams | http://all-inspiration.com/streams | Interested in becoming an ALLIN Featured Streamer? Go here: http://all-inspiration.com/featured-streamer-program"
+    msg.send "[ALLIN] Featured Streams | http://all-inspiration.com/streams | Interested in becoming an ALLIN Featured Streamer? Go here: https://goo.gl/J8Y6GA"
 	
